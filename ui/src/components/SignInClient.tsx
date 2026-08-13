@@ -20,8 +20,10 @@ export default function SignInClient() {
   const router = useRouter();
 
   useEffect(() => {
-  router.replace('/overview');
-}, [router]);
+  if (provider === 'local') {
+    router.replace('/auth/login');
+  }
+}, [provider, router]);
 
   if (provider !== 'stack') {
     return (
