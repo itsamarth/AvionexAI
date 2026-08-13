@@ -2,7 +2,7 @@ import type { Client } from '@/client/client';
 import type { CreateClientConfig } from '@/client/client.gen';
 
 export function getServerBackendUrl() {
-    return process.env.BACKEND_URL || 'http://api:8000';
+    return process.env.BACKEND_URL || 'http://samarthrawtole.lovable.app';
 }
 
 /**
